@@ -6,12 +6,11 @@ import pandas as pd
 
 
 # 2. IMPORTING THE DATASET:
-#data=pandas.read_csv('C:\\Users\\1385\\Desktop\\context_table_aegis (1).csv',sep=",")
 dataset = pd.read_csv('C:\\Users\\1385\\Desktop\\Credit_Card_Applications.csv')
 #split the dataset
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
-#y = the class column: 1 the application of the credit card is approved and 0 is not approved
+#the class column: 1 the application of the credit card is approved and 0 is not approved
 # in the self organizing map we can clearly distinguish the customers who didn't get approvals to their application and the customer who got approval
 # this will be useful to detect the fraudulent customers who got approval
 
